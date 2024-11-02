@@ -43,7 +43,7 @@ const Navbar = ({ direction, setDirection }) => {
     >
       <section className="xl:container mx-auto ">
         <div className="mx-auto flex justify-between items-center lg:hidden w-100">
-          <Link className="flex items-center" to="/">
+          <Link className="flex items-center" to="/Doctor_Mohamed_sera/">
             <img src={logo} className="w-12 h-12 mx-5" alt="logo" />
             <span className="hover:text-teal-300">{t("Dr Mohamed Sera")}</span>
           </Link>
@@ -78,7 +78,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300"
-                to="/"
+                to="/Doctor_Mohamed_sera/"
                 onClick={handleNavItemClick}
               >
                 {t("Home")}
@@ -87,7 +87,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300"
-                to="/contact_us"
+                to="contact_us"
                 onClick={handleNavItemClick}
               >
                 {t("Contact Us")}
@@ -96,7 +96,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300"
-                to="/services"
+                to="services"
                 onClick={handleNavItemClick}
               >
                 {t("Our Services")}
@@ -105,7 +105,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300"
-                to="/about_us"
+                to="about_us"
                 onClick={handleNavItemClick}
               >
                 {t("About Us")}
@@ -114,7 +114,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300"
-                to="/photo_gallery"
+                to="photo_gallery"
                 onClick={handleNavItemClick}
               >
                 {t("Photo Gallery")}
@@ -123,7 +123,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300"
-                to="/video_gallery"
+                to="video_gallery"
                 onClick={handleNavItemClick}
               >
                 {t("Video Gallery")}
@@ -164,7 +164,7 @@ const Navbar = ({ direction, setDirection }) => {
         <div
           className={`hidden lg:flex md:items-center md:justify-between md:space-x-6`}
         >
-          <Link className="flex items-center" to="/">
+          <Link className="flex items-center" to="/Doctor_Mohamed_sera/">
             <img src={logo} className="w-12 h-12 mx-5" alt="logo" />
             <span className="hover:text-teal-300">{t("Dr Mohamed Sera")}</span>
           </Link>
@@ -173,7 +173,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300 md:text-sm"
-                to="/"
+                to="/Doctor_Mohamed_sera/"
                 onClick={handleNavItemClick}
               >
                 {t("Home")}
@@ -182,7 +182,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300 md:text-sm"
-                to="/contact_us"
+                to="contact_us"
                 onClick={handleNavItemClick}
               >
                 {t("Contact Us")}
@@ -191,7 +191,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300 md:text-sm"
-                to="/services"
+                to="services"
                 onClick={handleNavItemClick}
               >
                 {t("Our Services")}
@@ -200,7 +200,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300 md:text-sm"
-                to="/about_us"
+                to="about_us"
                 onClick={handleNavItemClick}
               >
                 {t("About Us")}
@@ -209,7 +209,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300 md:text-sm"
-                to="/photo_gallery"
+                to="photo_gallery"
                 onClick={handleNavItemClick}
               >
                 {t("Photo Gallery")}
@@ -218,7 +218,7 @@ const Navbar = ({ direction, setDirection }) => {
             <li>
               <Link
                 className="hover:text-teal-300 md:text-sm"
-                to="/video_gallery"
+                to="video_gallery"
                 onClick={handleNavItemClick}
               >
                 {t("Video Gallery")}

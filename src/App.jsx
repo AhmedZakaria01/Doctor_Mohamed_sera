@@ -21,7 +21,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route
-            path="/"
+            path="/Doctor_Mohamed_sera/"
             element={
               <Layout direction={direction} setDirection={setDirection} />
             }

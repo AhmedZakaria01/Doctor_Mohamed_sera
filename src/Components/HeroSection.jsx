@@ -28,9 +28,8 @@ function HeroSection() {
             {t(
               "Dr Mohamed Sera provide expert medical advice and consultation. Get in touch with our team to discuss"
             )}
-            
           </p>
-          <Button text={"Book Now"} to={"/contact_us"} />
+          <Button text={"Book Now"} to={"/Doctor_Mohamed_sera/contact_us"} />
         </div>
       </div>
     </div>
