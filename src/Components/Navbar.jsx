@@ -74,7 +74,7 @@ const Navbar = ({ direction, setDirection }) => {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } lg:hidden flex-col justify-between items-center p-4 bg-gradient-to-b from-cyan-900 to-blue-900 `}
+          } lg:hidden flex-col justify-between items-center py-4 bg-gradient-to-b from-cyan-900 to-blue-900 `}
         >
           <ul className="flex gap-y-5 text-center flex-col space-y-2">
             <li>
@@ -133,7 +133,7 @@ const Navbar = ({ direction, setDirection }) => {
             </li>
           </ul>
 
-          <div className="flex gap-4 my-5 justify-center items-center">
+          <div className="flex gap-8 my-5 justify-center items-center">
             <Link to="https://www.facebook.com/DrMohamedsera" target="_self">
               <i className="fab fa-facebook-f text-blue-600 hover:text-blue-500 text-[25px]"></i>
             </Link>
