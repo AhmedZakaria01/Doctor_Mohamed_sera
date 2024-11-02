@@ -1,6 +1,7 @@
 import { t } from "i18next";
 import Button from "./Button";
 import circleBg from "../assets/circle_bg.png";
+import WhatsappButton from "./WhatsappButton";
 
 function HeroSection() {
   return (
@@ -35,7 +36,14 @@ function HeroSection() {
             {t("Get in touch with our team to discuss")}
           </p>
 
-          <Button text={"Book Now"} to={"/Doctor_Mohamed_sera/contact_us"} />
+         
+            <WhatsappButton
+              className="text-green-500 hover:text-gold"
+              size={"text-[15px]"}
+              button={'button'}
+              text={'Book Now'}
+            />
+ 
         </div>
       </div>
     </div>
