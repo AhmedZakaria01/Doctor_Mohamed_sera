@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
-import dr_mohamed_about from "../assets/dr_mohamed.png";
+ import dr_mohamed_about from "../assets/dr_mohamed.png";
 import PropTypes from "prop-types";
 import Button from "./button";
 import { t } from "i18next";
-function About_Dr_Home({ fadeUp, fadeRight }) {
+function About_Dr_Home() {
   return (
     <>
       <section className="text-black  ">

@@ -1,5 +1,4 @@
-import PropTypes from "prop-types"; // Import PropTypes
-import ReactWhatsapp from "react-whatsapp";
+ import ReactWhatsapp from "react-whatsapp";
 
 const WhatsappButton = () => (
   <ReactWhatsapp

@@ -1,6 +1,5 @@
 // LanguageSwitcher.jsx
-import React from "react";
-import PropTypes from "prop-types";
+ import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
 const LanguageSwitcher = ({ direction, setDirection }) => {

@@ -1,6 +1,5 @@
 import { t } from "i18next";
-import { Link } from "react-router-dom";
-import Button from "./button";
+ import Button from "./button";
 import circleBg from "../assets/circle_bg.png";
 
 function HeroSection() {
