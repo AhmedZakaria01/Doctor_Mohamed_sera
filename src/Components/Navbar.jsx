@@ -45,7 +45,9 @@ const Navbar = ({ direction, setDirection }) => {
         <div className="mx-auto flex justify-between items-center lg:hidden w-100">
           <Link className="flex items-center" to="/Doctor_Mohamed_sera/">
             <img src={logo} className="w-12 h-12 mx-5" alt="logo" />
-            <span className="hover:text-teal-300">{t("Dr Mohamed Sera")}</span>
+            <span className="hover:text-teal-300  text-[20px]">
+              {t("Dr Mohamed Sera")}
+            </span>
           </Link>
           <button
             className="lg:hidden flex items-center px-2 py-1 text-light focus:outline-none"
@@ -77,7 +79,7 @@ const Navbar = ({ direction, setDirection }) => {
           <ul className="flex gap-y-5 text-center flex-col space-y-2">
             <li>
               <Link
-                className="hover:text-teal-300"
+                className="hover:text-teal-300 text-[20px]"
                 to="/Doctor_Mohamed_sera/"
                 onClick={handleNavItemClick}
               >
@@ -86,7 +88,7 @@ const Navbar = ({ direction, setDirection }) => {
             </li>
             <li>
               <Link
-                className="hover:text-teal-300"
+                className="hover:text-teal-300 text-[20px]"
                 to="contact_us"
                 onClick={handleNavItemClick}
               >
@@ -95,7 +97,7 @@ const Navbar = ({ direction, setDirection }) => {
             </li>
             <li>
               <Link
-                className="hover:text-teal-300"
+                className="hover:text-teal-300 text-[20px]"
                 to="services"
                 onClick={handleNavItemClick}
               >
@@ -104,7 +106,7 @@ const Navbar = ({ direction, setDirection }) => {
             </li>
             <li>
               <Link
-                className="hover:text-teal-300"
+                className="hover:text-teal-300 text-[20px]"
                 to="about_us"
                 onClick={handleNavItemClick}
               >
@@ -113,7 +115,7 @@ const Navbar = ({ direction, setDirection }) => {
             </li>
             <li>
               <Link
-                className="hover:text-teal-300"
+                className="hover:text-teal-300 text-[20px]"
                 to="photo_gallery"
                 onClick={handleNavItemClick}
               >
@@ -122,7 +124,7 @@ const Navbar = ({ direction, setDirection }) => {
             </li>
             <li>
               <Link
-                className="hover:text-teal-300"
+                className="hover:text-teal-300 text-[20px]"
                 to="video_gallery"
                 onClick={handleNavItemClick}
               >
@@ -131,30 +133,31 @@ const Navbar = ({ direction, setDirection }) => {
             </li>
           </ul>
 
-          <div className="flex gap-4 my-5 justify-center">
+          <div className="flex gap-4 my-5 justify-center items-center">
             <Link to="https://www.facebook.com/DrMohamedsera" target="_self">
-              <i className="fab fa-facebook-f text-blue-600 hover:text-blue-500"></i>
+              <i className="fab fa-facebook-f text-blue-600 hover:text-blue-500 text-[25px]"></i>
             </Link>
             <Link
               to="https://www.instagram.com/dr.mohamed_sera/"
               target="_self"
             >
-              <i className="fab fa-instagram text-pink-500 hover:text-pink-400"></i>
+              <i className="fab fa-instagram text-pink-500 hover:text-pink-400 text-[25px]"></i>
             </Link>
             <Link
               to="https://www.linkedin.com/in/dr-mohamed-sera-01972822b/"
               target="_self"
             >
-              <i className="fab fa-linkedin-in text-blue-500 hover:text-blue-400"></i>
+              <i className="fab fa-linkedin-in text-blue-500 hover:text-blue-400 text-[25px]"></i>
             </Link>
             <Link to="https://www.youtube.com/@yehiasera" target="_self">
-              <i className="fab fa-youtube text-red-500 hover:text-red-400"></i>
+              <i className="fab fa-youtube text-red-500 hover:text-red-400 text-[25px]"></i>
             </Link>
-            <WhatsappButton />
+            <WhatsappButton size={"text-[25px]"} />
             <LanguageSwitcher
               direction={direction}
               setDirection={setDirection}
-              className="my-4"
+              className="my-4 "
+              size={"text-[25px]"}
             />
           </div>
         </div>
@@ -228,7 +231,7 @@ const Navbar = ({ direction, setDirection }) => {
 
           <div className="flex items-center gap-4">
             <Link to="https://www.facebook.com/DrMohamedsera" target="_self">
-              <i className="fab fa-facebook-f text-blue-600 hover:text-blue-500"></i>
+              <i className="fab fa-facebook-f text-blue-600 hover:text-blue-500 "></i>
             </Link>
             <Link
               to="https://www.instagram.com/dr.mohamed_sera/"
