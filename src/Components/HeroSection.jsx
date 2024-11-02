@@ -1,5 +1,5 @@
 import { t } from "i18next";
- import Button from "./button";
+ import Button from "./Button";
 import circleBg from "../assets/circle_bg.png";
 
 function HeroSection() {
