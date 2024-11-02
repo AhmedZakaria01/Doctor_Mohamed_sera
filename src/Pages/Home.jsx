@@ -1,4 +1,4 @@
- import HomeOurServices from "../Components/HomeOurServices";
+import HomeOurServices from "../Components/HomeOurServices";
 import About_Dr_Home from "../Components/Home_About_Dr";
 import Certificates from "../Components/Certificates";
 import AnalfissureImage from "../assets/Anal fissure surgery.png";
@@ -56,7 +56,7 @@ function Home() {
       {/* About Dr Section */}
       <section className="my-5">
         <h3 data-aos="fade-up" className="py-2 text-center header m-0 mb-5">
-          {t("About Dr Mohamed")}
+          {t("About Dr Mohamed Sera")}
         </h3>
         <About_Dr_Home />
       </section>

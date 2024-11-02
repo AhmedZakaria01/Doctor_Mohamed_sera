@@ -18,18 +18,15 @@ function About_Dr_Home() {
             className="w-full px-5 text-start 2xl:text-[20px]"
           >
             <h3 className="py-4   text-start 2xl:text-[40px] ">
-              Dr Mohamed Sera Clinic
+              {t("Dr Mohamed Sera Clinic")}
             </h3>
             <p className="text-gray-400 ">
-              <strong className="text-gray-500">
-                {t("Dr. Mohamed Sera’s")}
-              </strong>
               {t(
-                "clinic combines expertise with the latest surgical innovations to ensure quick recovery and minimal discomfort. Whether you need a simple or complex procedure, our minimally invasive techniques provide you with the best care and faster healing. Your well-being is our priority-experience a healthier life today"
+                "Dr. Mohamed Sera’s clinic combines expertise with the latest surgical innovations to ensure quick recovery and minimal discomfort. Whether you need a simple or complex procedure, our minimally invasive techniques provide you with the best care and faster healing. Your well-being is our priority-experience a healthier life today"
               )}
             </p>
 
-            <Button text={t("More About Dr Mohamed")} />
+            <Button text={t("More About Dr Mohamed Sera")} />
           </div>
         </div>
       </section>

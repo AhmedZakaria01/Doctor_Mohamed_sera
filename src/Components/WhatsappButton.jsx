@@ -1,8 +1,9 @@
- import ReactWhatsapp from "react-whatsapp";
+import PropTypes from "prop-types";
+import ReactWhatsapp from "react-whatsapp";
 
-const WhatsappButton = () => (
+const WhatsappButton = ({ size }) => (
   <ReactWhatsapp
-    className="text-green-500 hover:text-green-400"
+    className={`text-green-500 ${size} hover:text-green-400`}
     number="+20 1095521277"
     message="Hello, is there anyone available to chat with!"
   >
@@ -10,5 +11,8 @@ const WhatsappButton = () => (
   </ReactWhatsapp>
 );
 
- 
 export default WhatsappButton;
+
+WhatsappButton.propTypes = {
+  size: PropTypes.string,
+};
