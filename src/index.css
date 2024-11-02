@@ -1,0 +1,84 @@
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+
+/* In your CSS file */
+html[dir="rtl"] {
+  body {
+    text-align: right;
+  }
+  .some-class {
+    flex-direction: row-reverse;
+  }
+}
+
+ body {
+    font-family:  Arial, Helvetica, sans-serif;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.874); */
+    /* background-color: rgba(0, 0, 0, 0.94); */
+    color: white;
+    box-sizing: border-box ;
+    overflow-x: hidden;
+ }
+
+ .header {
+    background: linear-gradient(to right,#001c38, #00334e );
+    padding: 10px 0px;
+    /* margin: 20px 0px; */
+ }
+ Link {
+    color: red !important;
+ }
+ h1 {
+     font-size: 2.5rem;
+     /* 40px */
+     line-height: 1.2;
+     /* Adjust line height as needed */
+ }
+
+ h2 {
+     font-size: 2rem;
+     /* 32px */
+     line-height: 1.2;
+     /* Adjust line height as needed */
+ }
+
+ h3 {
+     font-size: 1.75rem;
+     /* 28px */
+     line-height: 1.2;
+     /* Adjust line height as needed */
+ }
+
+ h4 {
+     font-size: 1.5rem;
+     /* 24px */
+     line-height: 1.2;
+     /* Adjust line height as needed */
+ }
+
+ h5 {
+     font-size: 1.25rem;
+     /* 20px */
+     line-height: 1.2;
+     /* Adjust line height as needed */
+ }
+
+ h6 {
+     font-size: 1rem;
+     /* 16px */
+     line-height: 1.2;
+     /* Adjust line height as needed */
+ }
+
+
+
+ .btn {
+
+        padding: 5px 30px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+
+ }
