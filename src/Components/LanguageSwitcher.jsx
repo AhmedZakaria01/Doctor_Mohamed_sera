@@ -1,8 +1,7 @@
-// LanguageSwitcher.jsx
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
-const LanguageSwitcher = ({ direction, setDirection, size }) => {
+const LanguageSwitcher = ({ direction, setDirection }) => {
   const { i18n } = useTranslation();
 
   const handleLanguageChange = (lang) => {
@@ -14,18 +13,14 @@ const LanguageSwitcher = ({ direction, setDirection, size }) => {
     <div>
       {direction === "rtl" ? (
         <button
-          className={`px-3 py-1 rounded-md text-cyan-500 hover:text-cyan-300 hover:border-cyan-400  ${
-            size ? size : "text-[15px]"
-          }`}
+          className="px-3 py-1 rounded-md text-white hover:text-cyan-300 hover:border-cyan-400 text-[12px]"
           onClick={() => handleLanguageChange("en")}
         >
           EN
         </button>
       ) : (
         <button
-          className={`px-3 py-1 rounded-md text-cyan-500 hover:text-cyan-300 hover:border-cyan-400  ${
-            size ? size : "text-[15px]"
-          }`}
+          className="px-3 py-1 rounded-md text-white hover:text-cyan-300 hover:border-cyan-400 text-[12px]"
           onClick={() => handleLanguageChange("ar")}
         >
           AR
@@ -38,7 +33,6 @@ const LanguageSwitcher = ({ direction, setDirection, size }) => {
 LanguageSwitcher.propTypes = {
   direction: PropTypes.string.isRequired,
   setDirection: PropTypes.func.isRequired,
-  size: PropTypes.string,
 };
 
 export default LanguageSwitcher;
