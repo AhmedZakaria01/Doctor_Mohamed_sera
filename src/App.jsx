@@ -9,11 +9,16 @@ import PhotoGallery from "./Pages/PhotoGallery";
 import VideoGallery from "./Pages/VideoGallery";
 import { useEffect, useState } from "react";
 import i18n from "./i18n";
+import WhatsappButton from "./Components/WhatsappButton"; // 👈 Import the button
+import CallButton from "./Components/CallButton";
+
 const App = () => {
   const [direction, setDirection] = useState("ltr");
+
   useEffect(() => {
-    document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
-    setDirection(i18n.language === "ar" ? "rtl" : "ltr");
+    const lang = i18n.language;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    setDirection(lang === "ar" ? "rtl" : "ltr");
   }, []);
 
   return (
@@ -35,6 +40,13 @@ const App = () => {
           </Route>
         </Routes>
       </Router>
+
+      {/* ✅ Floating WhatsApp Button */}
+      <div className="fixed bottom-6 left-6  z-[9999]">
+        <CallButton />
+
+        <WhatsappButton float={"true"} />
+      </div>
     </div>
   );
 };
