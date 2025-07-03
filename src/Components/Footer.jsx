@@ -52,6 +52,17 @@ const Footer = () => {
       className="bg-gradient-to-br from-blue-950 via-cyan-900 to-blue-800 text-white py-10 px-4 sm:px-8"
     >
       <div className="max-w-7xl mx-auto flex flex-col gap-8 md:flex-row justify-between items-start">
+        {/* About Section */}
+        <div className="w-full md:w-1/3 space-y-4">
+          <h4 className="text-lg font-semibold text-cyan-300">
+            {isArabic ? "د. محمد صيره" : "Dr Mohamed Sera"}
+          </h4>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            {isArabic
+              ? "استشارات وعناية جراحية متقدمة باستخدام أحدث تقنيات الجراحة الأقل تداخلاً. صحتك هي أولويتنا."
+              : "Expert surgical consultation and care with the latest minimally invasive techniques. Your health, our mission."}
+          </p>
+        </div>
         {/* Contact Section */}
         <div className="w-full md:w-1/3 space-y-4">
           <h4 className="text-lg font-semibold text-cyan-300">
@@ -105,18 +116,6 @@ const Footer = () => {
               <i className="fab fa-youtube"></i>
             </Link>
           </div>
-        </div>
-
-        {/* About Section */}
-        <div className="w-full md:w-1/3 space-y-4">
-          <h4 className="text-lg font-semibold text-cyan-300">
-            {isArabic ? "د. محمد صيره" : "Dr Mohamed Sera"}
-          </h4>
-          <p className="text-gray-300 text-sm leading-relaxed">
-            {isArabic
-              ? "استشارات وعناية جراحية متقدمة باستخدام أحدث تقنيات الجراحة الأقل تداخلاً. صحتك هي أولويتنا."
-              : "Expert surgical consultation and care with the latest minimally invasive techniques. Your health, our mission."}
-          </p>
         </div>
       </div>
 
