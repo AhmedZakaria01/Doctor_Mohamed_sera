@@ -54,7 +54,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col gap-8 md:flex-row justify-between items-start">
         {/* About Section */}
         <div className="w-full md:w-1/3 space-y-4">
-          <h4 className="text-lg font-semibold text-cyan-300">
+          <h4 className="text-lg font-semibold text-cyan-300 text-center">
             {isArabic ? "د. محمد صيره" : "Dr Mohamed Sera"}
           </h4>
           <p className="text-gray-300 text-sm leading-relaxed">
@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
         {/* Contact Section */}
         <div className="w-full md:w-1/3 space-y-4">
-          <h4 className="text-lg font-semibold text-cyan-300">
+          <h4 className="text-lg font-semibold text-cyan-300 text-center">
             {isArabic ? "تواصل معنا" : "Contact"}
           </h4>
           <div className="flex justify-center items-center gap-3">
@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media Section */}
-        <div className="w-full md:w-1/3 space-y-4">
+        <div className="w-full md:w-1/3 space-y-4 text-center">
           <h4 className="text-lg font-semibold text-cyan-300">
             {isArabic ? "تابعنا" : "Follow Us"}
           </h4>

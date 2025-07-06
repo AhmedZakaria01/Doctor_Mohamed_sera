@@ -87,7 +87,7 @@
 //             <li>
 //               <Link
 //                 className="hover:text-teal-300"
-//                 to="/contact_us"
+//                 to="contact_us"
 //                 onClick={handleNavItemClick}
 //               >
 //                 {t("Contact Us")}
@@ -182,7 +182,7 @@
 //             <li>
 //               <Link
 //                 className="hover:text-teal-300 md:text-sm"
-//                 to="/contact_us"
+//                 to="contact_us"
 //                 onClick={handleNavItemClick}
 //               >
 //                 {t("Contact Us")}
@@ -270,6 +270,7 @@ import PropTypes from "prop-types";
 import logo from "../assets/logo.png";
 import WhatsappButton from "../Components/WhatsappButton";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { t } from "i18next";
 
 const Navbar = ({ direction, setDirection }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -334,25 +335,61 @@ const Navbar = ({ direction, setDirection }) => {
             isOpen ? "max-h-[500px] mt-4" : "max-h-0"
           }`}
         >
-          <ul className="flex flex-col items-center gap-4 text-white text-sm">
-            {[
-              "Home",
-              "Contact Us",
-              "Our Services",
-              "About Us",
-              "Photo Gallery",
-              "Video Gallery",
-            ].map((label, index) => (
-              <li key={index}>
-                <Link
-                  to={`/${label.replace(/\s+/g, "_").toLowerCase()}`}
-                  onClick={handleNavItemClick}
-                  className="hover:text-teal-300 transition-colors"
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
+          <ul className="flex gap-6 text-white text-sm font-medium">
+            <li>
+              <Link
+                to="/"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.home")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact_us"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.contact")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.services")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about_us"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.about")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/photo_gallery"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.photoGallery")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/video_gallery"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.videoGallery")}
+              </Link>
+            </li>
           </ul>
 
           <div className="flex justify-center gap-4 mt-6 text-xl">
@@ -380,24 +417,60 @@ const Navbar = ({ direction, setDirection }) => {
           </Link>
 
           <ul className="flex gap-6 text-white text-sm font-medium">
-            {[
-              "Home",
-              "Contact Us",
-              "Our Services",
-              "About Us",
-              "Photo Gallery",
-              "Video Gallery",
-            ].map((label, index) => (
-              <li key={index}>
-                <Link
-                  to={`/${label.replace(/\s+/g, "_").toLowerCase()}`}
-                  onClick={handleNavItemClick}
-                  className="hover:text-teal-300 transition-colors"
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
+            <li>
+              <Link
+                to="/"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.home")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact_us"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.contact")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.services")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about_us"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.about")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/photo_gallery"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.photoGallery")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/video_gallery"
+                onClick={handleNavItemClick}
+                className="hover:text-teal-300 transition-colors"
+              >
+                {t("navbar.videoGallery")}
+              </Link>
+            </li>
           </ul>
 
           <div className="flex items-center gap-4 text-xl">

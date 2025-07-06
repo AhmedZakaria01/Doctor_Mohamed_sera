@@ -11,6 +11,13 @@ import { useEffect, useState } from "react";
 import i18n from "./i18n";
 import WhatsappButton from "./Components/WhatsappButton"; // 👈 Import the button
 import CallButton from "./Components/CallButton";
+import NotFound from "./Pages/NotFound";
+import AnalFissureSurgery from "./Components/AnalFissureSurgery";
+import HemorrhoidSurgery from "./Components/HemorrhoidSurgery";
+import IngrownToenailSurgery from "./Components/IngrownToenailSurgery";
+import LaparoscopicSurgeries from "./Components/LaparoscopicSurgeries";
+import MinimallyInvasiveSurgeries from "./Components/MinimallyInvasiveSurgeries";
+import ColonSurgeries from "./Components/ColonSurgeries";
 
 const App = () => {
   const [direction, setDirection] = useState("ltr");
@@ -37,12 +44,29 @@ const App = () => {
             <Route path="about_us" element={<AboutUs />} />
             <Route path="photo_gallery" element={<PhotoGallery />} />
             <Route path="video_gallery" element={<VideoGallery />} />
+            {/* surgeries */}
+            <Route path="AnalFissureSurgery" element={<AnalFissureSurgery />} />
+            <Route path="HemorrhoidSurgery" element={<HemorrhoidSurgery />} />
+            <Route
+              path="IngrownToenailSurgery"
+              element={<IngrownToenailSurgery />}
+            />
+            <Route
+              path="LaparoscopicSurgeries"
+              element={<LaparoscopicSurgeries />}
+            />{" "}
+            <Route
+              path="MinimallyInvasiveSurgeries"
+              element={<MinimallyInvasiveSurgeries />}
+            />{" "}
+            <Route path="ColonSurgeries" element={<ColonSurgeries />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </Router>
 
       {/* ✅ Floating WhatsApp Button */}
-      <div className="fixed bottom-6 left-6  z-[9999]">
+      <div className="fixed bottom-5 left-2  z-[9999]">
         <CallButton />
 
         <WhatsappButton float={"true"} />
