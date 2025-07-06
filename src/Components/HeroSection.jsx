@@ -29,7 +29,7 @@
 //               "Dr Mohamed Sera provide expert medical advice and consultation. Get in touch with our team to discuss"
 //             )}
 //           </p>
-//           <Button text={"Book Now"} to={"/contact_us"} />
+//           <Button text={"Book Now"} to={"contact_us_us"} />
 //         </div>
 //       </div>
 //     </div>
@@ -37,8 +37,6 @@
 // }
 
 // export default HeroSection;
-
-
 
 // import { useTranslation } from "react-i18next";
 // import { useEffect } from "react";
@@ -98,7 +96,7 @@
 //           <div
 //             className={`flex ${isArabic ? "justify-start" : "justify-start"}`}
 //           >
-//             <Button text={t("hero.cta")} to="/contact_us" />
+//             <Button text={t("hero.cta")} to="contact_us_us" />
 //           </div>
 //         </div>
 
@@ -119,7 +117,6 @@
 // }
 
 // export default HeroSection;
-
 
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
@@ -142,7 +139,7 @@ function HeroSection() {
       dir={isArabic ? "rtl" : "ltr"}
       className="relative min-h-screen w-full bg-gradient-to-br from-sky-950 via-blue-900 to-cyan-800 text-white overflow-hidden font-sans"
       style={{
-         minHeight: "100dvh", // Dynamic viewport height for better mobile support
+        minHeight: "100dvh", // Dynamic viewport height for better mobile support
       }}
     >
       {/* Overlay */}
@@ -181,7 +178,7 @@ function HeroSection() {
                   : "justify-center md:justify-start"
               }`}
             >
-              <Button text={t("hero.cta")} to="/contact_us" />
+              <Button text={t("hero.cta")} to="/contact_us_us" />
             </div>
           </div>
 
