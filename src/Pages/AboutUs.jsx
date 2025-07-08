@@ -26,7 +26,7 @@ const AboutUs = () => {
       dir={i18n.language === "ar" ? "rtl" : "ltr"}
     >
       {/* Header */}
-      <div className="bg-white shadow-lg">
+      {/* <div className="bg-white shadow-lg">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4 space-x-reverse">
@@ -45,7 +45,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-6 py-12">

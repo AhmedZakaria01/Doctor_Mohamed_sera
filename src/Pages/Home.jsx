@@ -207,7 +207,6 @@
 // }
 
 // export default Home;
-
 import { t } from "i18next";
 import HeroSection from "../Components/HeroSection";
 import Certificates from "../Components/Certificates";
@@ -301,7 +300,7 @@ function Home() {
             {t("Our Services")}
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <HomeOurServices
                 key={index}
