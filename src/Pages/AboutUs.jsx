@@ -112,7 +112,7 @@ const AboutUs = () => {
         </div>
 
         {/* Gallery */}
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        {/* <div className="bg-white rounded-2xl shadow-xl p-8">
           <h3 className="text-3xl font-bold text-gray-800 text-center mb-8">
             {t("about.galleryTitle")}
           </h3>
@@ -131,24 +131,67 @@ const AboutUs = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Contact Info */}
+        {/* Contact Info - Clinics */}
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 mt-12 text-white">
           <h3 className="text-2xl font-bold text-center mb-8">
             {t("about.contactTitle")}
           </h3>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4">
-              <div>{t("about.location")}</div>
-              <div>{t("about.phone")}</div>
-              <div>{t("about.email")}</div>
-            </div>
-            <div className="space-y-4">
-              <div>{t("about.saturdayToThursday")}</div>
-              <div>{t("about.friday")}</div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Clinics Info */}
+            {[
+              {
+                title: t("Helwan Clinic"),
+                address: t(
+                  "38 Mohamed Sayed Ahmed St, above Gad Restaurant, First Floor"
+                ),
+                phone: "01010403800",
+              },
+              {
+                title: t("Maadi Clinic"),
+                address: t(
+                  "11 El Nasr St, Baskltah Bldg, above Mo'men & Carrier, 2nd Floor"
+                ),
+                phone: "01050505342",
+              },
+              {
+                title: t("The 5th Settlement Clinic"),
+                address: t(
+                  "Cairo Medical Center, 90th St, 2nd Floor, Clinic 203"
+                ),
+                phone: "01050505342",
+              },
+              {
+                title: t("October Clinic"),
+                address: t(
+                  "Cairo Medical Center, Central Axis, G7 Clinic, Ground Floor"
+                ),
+                phone: "01050505342",
+              },
+            ].map((clinic, index) => (
+              <div key={index} className="bg-white/10 rounded-xl p-4 shadow-md">
+                <h4 className="text-xl font-bold mb-2">{clinic.title}</h4> 
+                <div className="flex gap-3 justify-center">
+                  <a
+                    href={`tel:${clinic.phone}`}
+                    className="bg-white text-blue-700 font-semibold px-4 py-2 rounded hover:bg-gray-100 transition"
+                  >
+                    {t("Call Now")}
+                  </a>
+                  <a
+                    href={`https://wa.me/2${clinic.phone}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-green-500 text-white font-semibold px-4 py-2 rounded hover:bg-green-600 transition"
+                  >
+                    {t("WhatsApp")}
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

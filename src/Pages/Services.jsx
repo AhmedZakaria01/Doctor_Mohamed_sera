@@ -1,9 +1,5 @@
 function Services() {
-  return (
-    <>
-      <section className="mt-20">Services</section>
-    </>
-  );
+  return <div></div>;
 }
 
 export default Services;
