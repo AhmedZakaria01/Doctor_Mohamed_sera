@@ -153,5 +153,33 @@
     "The 5th Settlement Clinic": "The 5th Settlement Clinic",
     "Cairo Medical Center, 90th St, 2nd Floor, Clinic 203": "Cairo Medical Center, 90th St, 2nd Floor, Clinic 203",
     "October Clinic": "October Clinic",
-    "Cairo Medical Center, Central Axis, G7 Clinic, Ground Floor": "Cairo Medical Center, Central Axis, G7 Clinic, Ground Floor"
+    "Cairo Medical Center, Central Axis, G7 Clinic, Ground Floor": "Cairo Medical Center, Central Axis, G7 Clinic, Ground Floor",
+    "services": {
+        "sectionTitle": "Our Medical Services",
+        "sectionSubtitle": "We offer expert care for a range of proctology conditions.",
+        "analFissure": {
+            "title": "Anal Fissure",
+            "description": "Modern treatment for painful anal fissures using advanced techniques."
+        },
+        "hemorrhoids": {
+            "title": "Hemorrhoids",
+            "description": "Effective management and surgery for hemorrhoids with minimal discomfort."
+        },
+        "pilonidal": {
+            "title": "Pilonidal Sinus",
+            "description": "Safe, fast recovery procedures for pilonidal sinus issues."
+        },
+        "rectalProlapse": {
+            "title": "Rectal Prolapse",
+            "description": "Specialized care and surgical solutions for rectal prolapse."
+        },
+        "colonoscopy": {
+            "title": "Colonoscopy",
+            "description": "Comprehensive colon checkups for accurate diagnosis and peace of mind."
+        },
+        "constipation": {
+            "title": "Chronic Constipation",
+            "description": "Consultation and treatment plans for chronic or severe constipation cases."
+        }
+    }
 }

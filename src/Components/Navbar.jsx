@@ -286,8 +286,6 @@ const Navbar = ({ direction, setDirection }) => {
         window.removeEventListener("scroll", handleScroll);
       }
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -354,7 +352,7 @@ const Navbar = ({ direction, setDirection }) => {
                 {t("navbar.contact")}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/services"
                 onClick={handleNavItemClick}
@@ -362,7 +360,7 @@ const Navbar = ({ direction, setDirection }) => {
               >
                 {t("navbar.services")}
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="/about_us"
@@ -371,15 +369,15 @@ const Navbar = ({ direction, setDirection }) => {
               >
                 {t("navbar.about")}
               </Link>
-            </li>
-            <li>
-              <Link
+            {/* </li>
+            <li> */}
+              {/* <Link
                 to="/photo_gallery"
                 onClick={handleNavItemClick}
                 className="hover:text-teal-300 transition-colors"
               >
                 {t("navbar.photoGallery")}
-              </Link>
+              </Link> */}
             </li>
             <li>
               <Link
@@ -435,7 +433,7 @@ const Navbar = ({ direction, setDirection }) => {
                 {t("navbar.contact")}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/services"
                 onClick={handleNavItemClick}
@@ -443,7 +441,7 @@ const Navbar = ({ direction, setDirection }) => {
               >
                 {t("navbar.services")}
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="/about_us"
@@ -453,7 +451,7 @@ const Navbar = ({ direction, setDirection }) => {
                 {t("navbar.about")}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/photo_gallery"
                 onClick={handleNavItemClick}
@@ -461,8 +459,8 @@ const Navbar = ({ direction, setDirection }) => {
               >
                 {t("navbar.photoGallery")}
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link
                 to="/video_gallery"
                 onClick={handleNavItemClick}
@@ -470,7 +468,7 @@ const Navbar = ({ direction, setDirection }) => {
               >
                 {t("navbar.videoGallery")}
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           <div className="flex items-center gap-4 text-xl">

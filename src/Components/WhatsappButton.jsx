@@ -5,7 +5,7 @@ const WhatsappButton = ({ children, float }) => (
   <>
     {float ? (
       <ReactWhatsapp
-        number="201095521277"
+        number="201050505342 "
         message="Hello, is there anyone available to chat with!"
         className="my-2 sm:w-12 md:w-16 sm:h-12 md:h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-md hover:shadow-xl transition-all duration-300 ease-in-out flex items-center justify-center"
         aria-label="Chat on WhatsApp"
@@ -15,7 +15,7 @@ const WhatsappButton = ({ children, float }) => (
     ) : (
       <ReactWhatsapp
         className="text-green-500 hover:text-green-400"
-        number="201095521277"
+        number="201050505342 "
         message="Hello, is there anyone available to chat with!"
       >
         <i className="fab fa-whatsapp" />

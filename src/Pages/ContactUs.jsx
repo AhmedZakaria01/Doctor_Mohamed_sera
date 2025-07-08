@@ -65,7 +65,7 @@ const ContactUs = () => {
             {t("Click below to chat with us instantly.")}
           </p>
           <a
-            href="https://wa.me/201095521277"
+            href="https://wa.me/201050505342 "
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-green-500 text-white px-6 py-3 rounded-full text-lg font-semibold shadow hover:bg-green-600 transition"
