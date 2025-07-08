@@ -70,7 +70,7 @@
     "Overactive anal sphincter muscle (causing tightness)": "تشنج عضلات الشرج بشكل مفرط",
     "Fissures that do not respond to creams or medications": "الشقوق التي لا تستجيب للعلاج الدوائي",
     "Benefits of Surgery": "فوائد الجراحة",
-    "Lateral internal sphincterotomy is the most common surgical method. It has a high success rate (over 90%) and can provide rapid pain relief and improved healing.": "القطع الجانبي للعضلة العاصرة الداخلية هو الإجراء الجراحي الأكثر شيوعاً، ويحقق نسبة نجاح تتجاوز 90٪، ويوفر راحة سريعة وتحسن في الشفاء.",
+    "lateral": "القطع الجانبي للعضلة العاصرة الداخلية هو الإجراء الجراحي الأكثر شيوعاً، ويحقق نسبة نجاح تتجاوز 90٪، ويوفر راحة سريعة وتحسن في الشفاء.",
     "Need More Help?": "هل تحتاج إلى مساعدة إضافية؟",
     "Contact us or book your consultation today.": "تواصل معنا أو احجز استشارتك اليوم.",
     "cause.1": "الإمساك المزمن أو صعوبة التبرز",
@@ -146,5 +146,12 @@
     "Saturday - Thursday": "السبت - الخميس",
     "Friday": "الجمعة",
     "Map Placeholder": "موقع العيادة",
-    "We are here to help. Reach out anytime.": "نحن هنا لمساعدتك في أي وقت."
+    "Helwan Clinic": "عيادة حلوان",
+    "38 Mohamed Sayed Ahmed St, above Gad Restaurant, First Floor": "٣٨ شارع محمد سيد احمد باشا أعلى مطعم جاد الدور الاول",
+    "Maadi Clinic": "عيادة المعادي",
+    "11 El Nasr St, Baskltah Bldg, above Mo'men & Carrier, 2nd Floor": "11 شارع النصر عمارة بسكلته اعلى مؤمن و كاريير الدور الثاني",
+    "The 5th Settlement Clinic": " عيادة التجمع الخامس",
+    "Cairo Medical Center, 90th St, 2nd Floor, Clinic 203": "شارع التسعين مول كايرو ميديكال سنتر الدور الثانى عيادة ٢٠٣",
+    "October Clinic": "عيادة اكتوبر",
+    "Cairo Medical Center, Central Axis, G7 Clinic, Ground Floor": "كايرو ميديكال سنتر المحور المركزى الدور الارضى عيادة G7"
 }
