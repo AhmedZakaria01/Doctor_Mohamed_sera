@@ -67,7 +67,7 @@ const App = () => {
 
       {/* ✅ Floating WhatsApp Button */}
       <div className="fixed bottom-5 left-2  z-[9999]">
-        <CallButton />
+        <CallButton phone={"201095521277"} />
 
         <WhatsappButton float={"true"} />
       </div>

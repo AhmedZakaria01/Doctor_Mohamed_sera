@@ -178,7 +178,7 @@ function HeroSection() {
                   : "justify-center md:justify-start"
               }`}
             >
-              <Button text={t("hero.cta")} to="/contact_us_us" />
+              <Button text={t("hero.cta")} to="/contact_us" />
             </div>
           </div>
 
