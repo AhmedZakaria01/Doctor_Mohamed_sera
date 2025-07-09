@@ -45,7 +45,7 @@ const ColonSurgeries = () => {
           <h3 className="text-2xl font-bold text-gray-800 mb-6">
             {t("Common Reasons for Colon Surgery")}
           </h3>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
             {["ColonCause1", "ColonCause2", "ColonCause3", "ColonCause4"].map(
               (key, index) => (
                 <div
