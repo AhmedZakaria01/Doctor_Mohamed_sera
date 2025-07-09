@@ -18,6 +18,7 @@ import IngrownToenailSurgery from "./Components/IngrownToenailSurgery";
 import LaparoscopicSurgeries from "./Components/LaparoscopicSurgeries";
 import MinimallyInvasiveSurgeries from "./Components/MinimallyInvasiveSurgeries";
 import ColonSurgeries from "./Components/ColonSurgeries";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const App = () => {
   const [direction, setDirection] = useState("ltr");
@@ -30,6 +31,7 @@ const App = () => {
 
   return (
     <div style={{ direction: direction }}>
+
       <Router>
         <Routes>
           <Route
