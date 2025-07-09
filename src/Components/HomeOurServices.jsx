@@ -33,7 +33,6 @@
 
 // export default HomeOurServices;
 
-
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
@@ -66,9 +65,14 @@ function HomeOurServices({ src, text, title, dataAos, to }) {
 
           {/* Hover Text */}
           <div
-            className={`absolute inset-0 flex items-center justify-center p-4 sm:p-6 transition-opacity duration-500 ease-in-out ${
-              isHovered ? "opacity-100 backdrop-blur-sm" : "opacity-0"
-            }`}
+            className={`absolute inset-0 flex items-center justify-center p-4 sm:p-6 transition-opacity duration-500 ease-in-out
+-   ${isHovered ? "opacity-100 backdrop-blur-sm" : "opacity-0"}
++   ${
+              isHovered
+                ? "opacity-100 backdrop-blur-sm"
+                : "opacity-0 sm:opacity-100 sm:backdrop-blur-sm"
+            }
+  `}
           >
             <p
               className={`text-white text-sm sm:text-base leading-relaxed px-2 text-center ${
@@ -77,7 +81,7 @@ function HomeOurServices({ src, text, title, dataAos, to }) {
             >
               {t(text)}
             </p>
-          </div>
+          </div>  
         </div>
 
         {/* Title Section */}
