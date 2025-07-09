@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import WhatsappButton from "../Components/WhatsappButton";
 import CallButton from "../Components/CallButton";
+import { useState } from "react";
 
 const ContactUs = () => {
   const { t, i18n } = useTranslation();
@@ -38,6 +39,18 @@ const ContactUs = () => {
     },
   ];
 
+  // ✅ State: one boolean per map iframe (all start as true/loading)
+  const [loadingStates, setLoadingStates] = useState(
+    Array(clinics.length).fill(true)
+  );
+
+  // ✅ When a map is loaded, mark that index as false
+  const handleMapLoad = (index) => {
+    const updatedStates = [...loadingStates];
+    updatedStates[index] = false;
+    setLoadingStates(updatedStates);
+  };
+
   return (
     <div
       className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100"
@@ -65,7 +78,7 @@ const ContactUs = () => {
             {t("Click below to chat with us instantly.")}
           </p>
           <a
-            href="https://wa.me/201050505342 "
+            href="https://wa.me/201050505342"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-green-500 text-white px-6 py-3 rounded-full text-lg font-semibold shadow hover:bg-green-600 transition"
@@ -98,17 +111,27 @@ const ContactUs = () => {
               <div className="mt-2 mb-4 flex justify-center">
                 <CallButton phone={clinic.phone} />
               </div>
-              <div className="w-full h-64 rounded-xl overflow-hidden">
+
+              {/* ✅ Map with loader */}
+              <div className="w-full h-64 relative rounded-xl overflow-hidden">
+                {loadingStates[index] && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-white z-10">
+                    <div className="animate-spin rounded-full h-8 w-8 border-4 border-blue-500 border-t-transparent" />
+                  </div>
+                )}
                 <iframe
                   src={clinic.map}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
-                  allowFullScreen=""
+                  allow="geolocation"
+                  allowFullScreen
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                  sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   title={`${clinic.title} Map`}
-                ></iframe>
+                  onLoad={() => handleMapLoad(index)}
+                />
               </div>
             </div>
           ))}
