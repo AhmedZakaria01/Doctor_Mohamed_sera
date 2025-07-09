@@ -71,7 +71,7 @@ const Footer = () => {
           <div className="flex justify-center items-center gap-3">
             <i className="fas fa-phone text-green-400 text-base"></i>
             <span className="text-sm sm:text-base ltr text-left" dir="ltr">
-              +02 010 955 212 77
+              +02 010 50 50 53 42
             </span>
           </div>
           <div className="flex justify-center items-center gap-3">
